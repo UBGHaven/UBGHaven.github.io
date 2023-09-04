@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="60.64577502158458" height="58.69207781699474" viewBox="-0.18258866740850266 0.6782111220202083 60.64577502158458 58.69207781699474">
+  <defs>
+    <linearGradient id="grad_1" x2="1">
+      <stop offset="0" stop-color="#7AC36F" stop-opacity="1"/>
+      <stop offset="1" stop-color="#7AC36F" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_2" x2="1">
+      <stop offset="0" stop-color="#7AC36F" stop-opacity="1"/>
+      <stop offset="1" stop-color="#7AC36F" stop-opacity="1"/>
+    </linearGradient>
+  <linearGradient id="grad_1-.086982250213623,0,0,2.693655014038086,-418.3,-479.75" x2="58.0537" x1="2.2269" y1="3.0877" y2="3.0877" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7AC36F" stop-opacity="1"/>
+      <stop offset="1" stop-color="#7AC36F" stop-opacity="1"/>
+    </linearGradient><linearGradient id="grad_2-.086982250213623,0,0,2.693655014038086,-418.3,-479.75" x2="58.0537" x1="2.2269" y1="3.0877" y2="3.0877" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7AC36F" stop-opacity="1"/>
+      <stop offset="1" stop-color="#7AC36F" stop-opacity="1"/>
+    </linearGradient></defs>
+  <!-- Exported by Scratch - http://scratch.mit.edu/ -->
+  <path id="ID0.12809083331376314" fill="url(#grad_1-.086982250213623,0,0,2.693655014038086,-418.3,-479.75)" stroke="url(#grad_2-.086982250213623,0,0,2.693655014038086,-418.3,-479.75)" stroke-width="4.818977536233021" d="M 2.2269 3.0877 L 58.0537 3.0877 L 58.0537 56.9608 L 2.2269 56.9608 L 2.2269 3.0877 Z " style="stroke-linejoin: round; stroke-linecap: round;"/>
+  <g id="ID0.6252144738100469">
+    <path id="ID0.4310278343036771" fill="none" stroke="#FFFFFF" stroke-width="2.1778740882873535" stroke-linecap="round" d="M 25.237 21.9692 C 25.237 21.9692 26.1528 20.4937 26.8704 20.0635 C 27.8711 19.4581 29.0809 19.0857 30.2461 19.138 C 31.6127 19.1891 33.1372 19.567 34.2207 20.4447 C 35.1136 21.1677 35.5764 22.4483 35.6908 23.6026 C 35.8029 24.746 35.4218 26.0157 34.7652 26.9783 C 34.0073 28.089 32.8617 28.8861 31.7706 29.5917 C 30.9572 30.0502 29.682 29.6658 29.1571 30.4085 C 28.5757 31.2339 28.9786 32.3969 28.9394 33.403 C 28.9786 34.4495 29.1571 36.5609 29.1571 36.5609 "/>
+    <path id="ID0.9765122206881642" fill="#FFFFFF" stroke="none" stroke-linecap="round" d="M 29.556 39.64 C 29.9064 39.64 30.2234 39.7859 30.4532 40.0233 C 30.683 40.2596 30.8247 40.5863 30.8247 40.9467 C 30.8247 41.3072 30.683 41.6339 30.4532 41.8702 C 30.2234 42.1075 29.9064 42.2535 29.556 42.2535 C 29.2055 42.2535 28.8886 42.1075 28.6588 41.8702 C 28.429 41.6339 28.2873 41.3072 28.2873 40.9467 C 28.2873 40.5863 28.429 40.2596 28.6588 40.0233 C 28.8886 39.7859 29.2055 39.64 29.556 39.64 Z " stroke-width="1.0253331747513403"/>
+  </g>
+</svg>

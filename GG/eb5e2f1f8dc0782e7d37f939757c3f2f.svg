@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="60.64577502158458" height="58.69207781699474" viewBox="0.6174112849077815 0.6782111220202083 60.64577502158458 58.69207781699474">
+  <defs>
+    <linearGradient id="grad_1" x2="1">
+      <stop offset="0" stop-color="#FEC207" stop-opacity="1"/>
+      <stop offset="1" stop-color="#FEC207" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_2" x2="1">
+      <stop offset="0" stop-color="#FEC207" stop-opacity="1"/>
+      <stop offset="1" stop-color="#FEC207" stop-opacity="1"/>
+    </linearGradient>
+  <linearGradient id="grad_1-.086982250213623,0,0,2.693655014038086,-417.5,-479.75" x2="58.8537" x1="3.0269" y1="3.0877" y2="3.0877" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FEC207" stop-opacity="1"/>
+      <stop offset="1" stop-color="#FEC207" stop-opacity="1"/>
+    </linearGradient><linearGradient id="grad_2-.086982250213623,0,0,2.693655014038086,-417.5,-479.75" x2="58.8537" x1="3.0269" y1="3.0877" y2="3.0877" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FEC207" stop-opacity="1"/>
+      <stop offset="1" stop-color="#FEC207" stop-opacity="1"/>
+    </linearGradient></defs>
+  <!-- Exported by Scratch - http://scratch.mit.edu/ -->
+  <path id="ID0.12809083331376314" fill="url(#grad_1-.086982250213623,0,0,2.693655014038086,-417.5,-479.75)" stroke="url(#grad_2-.086982250213623,0,0,2.693655014038086,-417.5,-479.75)" stroke-width="4.818977536233021" d="M 3.0269 3.0877 L 58.8537 3.0877 L 58.8537 56.9608 L 3.0269 56.9608 L 3.0269 3.0877 Z " style="stroke-linejoin: round; stroke-linecap: round;"/>
+</svg>
