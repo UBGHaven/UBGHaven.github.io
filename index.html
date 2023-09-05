@@ -34,17 +34,28 @@
                     <div class="col-md-6">
                         <div class="text-white p-4 p-md-5">
                             <h2 class="fw-bold text-white mb-3" style="font-family: Roboto, sans-serif;">UBGHAVEN</h2>
-                            <p class="mb-4" style="font-family: Rubik, sans-serif;margin-top: -24px;">The Future of Unblocked Games.</p>
-                            <div class="my-3"><button class="btn btn-primary btn-lg me-2" type="button" style="background: rgba(13,110,253,0);border-radius: 0px;border-width: 2px;border-color: rgb(255,255,255);" onclick="opengame()">ENTER</button></div><script>
-function opengame() {
-var win = window.open()
-var url = "https://ubghaven.netlify.app/games.html"
-var iframe = win.document.createElement('iframe')
-iframe.style.width = "100%";
-iframe.style.length = "100%";
-iframe.style.border = "none";
-win.document.body.appendchild(iframe)
-}
+                            <p class="mb-4" style="font-family: Rubik, sans-serif;margin-top: -24px;">The Future.</p>
+                            <div class="my-3"><a class="btn btn-primary btn-lg me-2" role="button" href="/games.html" style="background: rgba(13,110,253,0);border-radius: 0px;border-width: 2px;border-color: rgb(255,255,255);" onclick="opengame()">ENTER</a></div><script>
+    if((window.top.location.href!="about:blank")){
+        var url = window.location.href;
+        win = window.open();
+        if(!win || win.closed || typeof win.closed=='undefined') { 
+            alert('Please allow popups for cloaking.');
+        }else{
+            win.document.body.style.margin = "0";
+            win.document.body.style.height = "100vh";
+            var iframe = win.document.createElement("iframe");
+            iframe.style.border = "none";
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
+            iframe.style.margin = "0";
+            iframe.referrerpolicy = "no-referrer";
+            iframe.allow = "fullscreen";
+            iframe.src = url.toString();
+            win.document.body.appendChild(iframe);
+            window.location.replace(localStorage.getItem("cloneURL"));
+        }
+    }
 </script>
                         </div>
                     </div>
