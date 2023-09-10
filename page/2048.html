@@ -59,8 +59,10 @@
         // Create an iframe element
         var iframe = document.createElement('iframe');
         iframe.src = folderURL; // Set the iframe source to the folder URL
-        iframe.style.width = '100%'; // Set the iframe width
-        iframe.style.height = '500px'; // Set the iframe height (adjust as needed)
+
+        // Set the iframe dimensions to maintain a 16:9 aspect ratio
+        iframe.style.width = '100%';
+        iframe.style.height = 'calc(100vw * 9 / 16)'; // 16:9 aspect ratio (adjust as needed)
 
         // Append the iframe to the embed container
         document.getElementById('embedContainer').appendChild(iframe);
