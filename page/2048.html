@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en" style="background: #1e1e1f;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>UBGntitled</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible:700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Marker+Hatch&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&amp;display=swap">
+    <link rel="stylesheet" href="/assets/css/Articles-Cards-images.css">
+    <link rel="stylesheet" href="/assets/css/Navbar-Right-Links-Dark-icons.css">
+</head>
+
+<body style="color: #161a1d;background: #1e1e1f;">
+    <nav class="navbar navbar-expand-md py-3" style="background: #212529;color: #212529;">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img src="/assets/img/New%20Project%20(16)%20(1).png" style="height: 35px;"></a><button data-bs-toggle="collapse" data-bs-target="#navcol-2" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-5">
+                <ul class="navbar-nav ms-auto" style="font-family: Rubik, sans-serif;">
+                    <li class="nav-item" style="font-family: Rubik, sans-serif;"></li>
+                    <li class="nav-item" style="font-family: Rubik, sans-serif;"></li>
+                    <li class="nav-item" style="font-family: Rubik, sans-serif;"></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item" style="font-family: Rubik, sans-serif;color: #ffffff;"></li>
+                    <li class="nav-item" style="font-family: Rubik, sans-serif;color: #ffffff;"><a class="nav-link" href="#" style="font-family: Rubik, sans-serif;color: #ffffff;">Games</a></li>
+                    <li class="nav-item" style="font-family: Rubik, sans-serif;color: #ffffff;"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="col d-flex justify-content-center align-items-center align-content-center">
+        <div class="card" style="width: 75%;background: rgb(30,30,31);">
+            <div class="card-body"></div>
+        </div>
+    </div>
+    <div class="col d-flex justify-content-center align-items-center align-content-center">
+        <div class="card" style="width: 75%;border-radius: 0px;background: var(--bs-body-color);">
+            <div class="card-body">
+                <h4 class="card-title" id="header" style="font-family: Rubik, sans-serif;font-weight: bold;color: rgb(255,255,255);">Title</h4>
+                <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>    <div id="embedContainer">
+        <!-- The iframe will be added here dynamically -->
+    </div><a class="card-link" href="#">Link</a><a class="card-link" href="#">Link</a>
+            </div>
+        </div>
+    </div>    <script>
+        // Get the current HTML filename
+        var currentFilename = window.location.pathname.split('/').pop().replace('.html', '');
+
+        // Create the URL for the folder with the same name
+        var folderURL = '/' + currentFilename; // Modify the base URL as needed
+
+        // Create an iframe element
+        var iframe = document.createElement('iframe');
+        iframe.src = folderURL; // Set the iframe source to the folder URL
+        iframe.style.width = '100%'; // Set the iframe width
+        iframe.style.height = '500px'; // Set the iframe height (adjust as needed)
+
+        // Append the iframe to the embed container
+        document.getElementById('embedContainer').appendChild(iframe);
+    </script>    <script>
+        // Get the current HTML filename
+        var currentFilename = window.location.pathname.split('/').pop().replace('.html', '');
+
+        // Update the header text with the filename
+        document.getElementById('header').textContent = currentFilename;
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/bs-init.js"></script>
+</body>
+
+</html>
