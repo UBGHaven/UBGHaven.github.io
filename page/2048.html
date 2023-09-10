@@ -46,7 +46,7 @@
                 <h4 class="card-title" id="header" style="font-family: Rubik, sans-serif;font-weight: bold;color: rgb(255,255,255);">Title</h4>
                 <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>    <div id="embedContainer">
         <!-- The iframe will be added here dynamically -->
-    </div><a class="card-link" href="#">Link</a><a class="card-link" href="#">Link</a>
+    </div><button class="btn btn-primary" id="fullscreenButton" type="button" style="background: rgb(33,37,41);border-radius: 0PX;border-width: 2px;border-color: rgb(255,255,255);">FULLSCREEN</button>
             </div>
         </div>
     </div>    <script>
@@ -66,12 +66,51 @@
 
         // Append the iframe to the embed container
         document.getElementById('embedContainer').appendChild(iframe);
+
+        // Get the iframe element
+        var iframeElement = document.querySelector('iframe');
+
+        // Get the fullscreen button element
+        var fullscreenButton = document.getElementById('fullscreenButton');
+
+        // Function to toggle fullscreen
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                iframeElement.requestFullscreen().catch(err => {
+                    console.error('Failed to enter fullscreen:', err);
+                });
+            } else {
+                document.exitFullscreen();
+            }
+        }
+
+        // Add a click event listener to the fullscreen button
+        fullscreenButton.addEventListener('click', toggleFullscreen);
+
+        // Add an event listener for the "Escape" key to exit fullscreen
+        document.addEventListener('fullscreenchange', function () {
+            if (!document.fullscreenElement) {
+                fullscreenButton.textContent = 'Fullscreen';
+            } else {
+                fullscreenButton.textContent = 'Exit Fullscreen';
+            }
+        });
+
+        // Function to exit fullscreen when "Escape" key is pressed
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && document.fullscreenElement) {
+                document.exitFullscreen();
+            }
+        });
     </script>    <script>
         // Get the current HTML filename
         var currentFilename = window.location.pathname.split('/').pop().replace('.html', '');
 
-        // Update the header text with the filename
-        document.getElementById('header').textContent = currentFilename;
+        // Decode the URL-encoded filename to display in the header
+        var decodedFilename = decodeURIComponent(currentFilename);
+
+        // Update the header text with the decoded filename
+        document.getElementById('header').textContent = decodedFilename;
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/bs-init.js"></script>
